@@ -13,6 +13,11 @@
 		490E9A0B1E544917001BBC2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490E9A091E544917001BBC2D /* Main.storyboard */; };
 		490E9A0D1E544917001BBC2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 490E9A0C1E544917001BBC2D /* Assets.xcassets */; };
 		490E9A101E544917001BBC2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490E9A0E1E544917001BBC2D /* LaunchScreen.storyboard */; };
+		490E9A1C1E56C501001BBC2D /* PedalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 490E9A1B1E56C501001BBC2D /* PedalCell.m */; };
+		490E9A1E1E5AF14D001BBC2D /* Overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 490E9A1D1E5AF14D001BBC2D /* Overlay.png */; };
+		490E9A261E5AFD88001BBC2D /* line1.png in Resources */ = {isa = PBXBuildFile; fileRef = 490E9A231E5AFD88001BBC2D /* line1.png */; };
+		490E9A271E5AFD88001BBC2D /* line2.png in Resources */ = {isa = PBXBuildFile; fileRef = 490E9A241E5AFD88001BBC2D /* line2.png */; };
+		490E9A281E5AFD88001BBC2D /* line3.png in Resources */ = {isa = PBXBuildFile; fileRef = 490E9A251E5AFD88001BBC2D /* line3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,12 @@
 		490E9A0C1E544917001BBC2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		490E9A0F1E544917001BBC2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		490E9A111E544917001BBC2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		490E9A1A1E56C500001BBC2D /* PedalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PedalCell.h; sourceTree = "<group>"; };
+		490E9A1B1E56C501001BBC2D /* PedalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PedalCell.m; sourceTree = "<group>"; };
+		490E9A1D1E5AF14D001BBC2D /* Overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Overlay.png; sourceTree = "<group>"; };
+		490E9A231E5AFD88001BBC2D /* line1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line1.png; sourceTree = "<group>"; };
+		490E9A241E5AFD88001BBC2D /* line2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line2.png; sourceTree = "<group>"; };
+		490E9A251E5AFD88001BBC2D /* line3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +69,16 @@
 		490E99FF1E544917001BBC2D /* PositiveGridDemo */ = {
 			isa = PBXGroup;
 			children = (
+				490E9A1D1E5AF14D001BBC2D /* Overlay.png */,
+				490E9A231E5AFD88001BBC2D /* line1.png */,
+				490E9A241E5AFD88001BBC2D /* line2.png */,
+				490E9A251E5AFD88001BBC2D /* line3.png */,
 				490E9A031E544917001BBC2D /* AppDelegate.h */,
 				490E9A041E544917001BBC2D /* AppDelegate.m */,
 				490E9A061E544917001BBC2D /* ViewController.h */,
 				490E9A071E544917001BBC2D /* ViewController.m */,
+				490E9A1A1E56C500001BBC2D /* PedalCell.h */,
+				490E9A1B1E56C501001BBC2D /* PedalCell.m */,
 				490E9A091E544917001BBC2D /* Main.storyboard */,
 				490E9A0C1E544917001BBC2D /* Assets.xcassets */,
 				490E9A0E1E544917001BBC2D /* LaunchScreen.storyboard */,
@@ -139,8 +156,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				490E9A101E544917001BBC2D /* LaunchScreen.storyboard in Resources */,
+				490E9A1E1E5AF14D001BBC2D /* Overlay.png in Resources */,
+				490E9A271E5AFD88001BBC2D /* line2.png in Resources */,
+				490E9A281E5AFD88001BBC2D /* line3.png in Resources */,
 				490E9A0D1E544917001BBC2D /* Assets.xcassets in Resources */,
 				490E9A0B1E544917001BBC2D /* Main.storyboard in Resources */,
+				490E9A261E5AFD88001BBC2D /* line1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				490E9A1C1E56C501001BBC2D /* PedalCell.m in Sources */,
 				490E9A081E544917001BBC2D /* ViewController.m in Sources */,
 				490E9A051E544917001BBC2D /* AppDelegate.m in Sources */,
 				490E9A021E544917001BBC2D /* main.m in Sources */,
@@ -275,9 +297,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BLGFD4U72P;
 				INFOPLIST_FILE = PositiveGridDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenchar.testdemo.PositiveGridDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -287,9 +311,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BLGFD4U72P;
 				INFOPLIST_FILE = PositiveGridDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenchar.testdemo.PositiveGridDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -312,6 +338,7 @@
 				490E9A161E544917001BBC2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
